@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>แบกเป้เที่ยว</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <header class="border-b border-emerald-100 bg-white">
+    <nav
+      class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      aria-label="เมนูหลัก"
+    >
+
+      <!-- Logo -->
+      <a
+        href="#"
+        class="rounded-md text-xl font-bold text-indigo-500
+               focus-visible:outline-2 focus-visible:outline-offset-4
+               focus-visible:outline-emerald-600"
+      >
+        แบกเป้เที่ยว
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden items-center gap-6 md:flex"
+      >
+
+        <a
+          href="#home"
+          class="rounded-md px-2 py-2 text-sm font-medium text-indigo-900
+                 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600"
+        >
+          หน้าแรก
+        </a>
+
+        <a
+          href="#categories"
+          class="rounded-md px-2 py-2 text-sm font-medium text-indigo-900
+                 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600"
+        >
+          หมวดหมู่
+        </a>
+
+        <a
+          href="#about"
+          class="rounded-md px-2 py-2 text-sm font-medium text-indigo-900
+                 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600"
+        >
+          เกี่ยวกับเรา
+        </a>
+
+        <a
+          href="#contact"
+          class="rounded-md px-2 py-2 text-sm font-medium text-indigo-900
+                 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600"
+        >
+          ติดต่อ
+        </a>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex items-center gap-2">
+
+        <!-- Cart -->
+        <button
+          type="button"
+          aria-label="ตะกร้าสินค้า"
+          class="rounded-lg p-2 text-emerald-900
+                 hover:bg-emerald-50 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600"
+        >
+          🛒
+        </button>
+
+        <!-- Mobile Menu -->
+        <button
+          type="button"
+          aria-label="เปิดเมนู"
+          class="rounded-lg p-2 text-emerald-900
+                 hover:bg-emerald-50 hover:text-emerald-600
+                 focus-visible:outline-2 focus-visible:outline-emerald-600
+                 md:hidden"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </nav>
+  </header>
+<!-- Hero Section -->
+<main>
+  <section
+    class="overflow-hidden bg-[#FFFDF5] py-10 sm:py-14 lg:py-20"
+    aria-labelledby="hero-heading"
+    
+  >
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center gap-10
+             px-4 sm:px-6 md:flex-row md:gap-10 lg:px-8"   
+    >
+
+      <div class="w-full min-w-0 md:w-1/2"
+        data-aos="fade-up">
+
+        <p class="mb-3 text-sm font-semibold text-emerald-600">
+          แบกเป้เที่ยว
+        </p>
+
+        <h1
+          id="hero-heading"
+          class="text-3xl font-bold leading-tight text-emerald-950
+                 sm:text-4xl lg:text-5xl"
+        >
+          ออกเดินทางไปพบกับ
+          <span class="text-emerald-600">สถานที่ท่องเที่ยว</span>
+          ที่น่าจดจำ
+        </h1>
+
+        <p
+          class="mt-5 max-w-xl text-base leading-7 text-slate-600 sm:text-lg"
+        >
+          ค้นพบสถานที่ท่องเที่ยวสวย ๆ พร้อมเรื่องราวและประสบการณ์ใหม่ ๆ
+          ให้ทุกการเดินทางของคุณเต็มไปด้วยความประทับใจ
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+
+          <a
+            href="#home"
+            class="inline-flex items-center justify-center rounded-lg
+                   bg-emerald-700 px-6 py-3 text-sm font-semibold text-white
+                   transition-colors hover:bg-emerald-800
+                   focus-visible:outline-2
+                   focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            หน้าแรก
+          </a>
+
+          <a
+            href="#about"
+            class="inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-6 py-3 text-sm font-semibold
+                   text-emerald-700 transition-colors
+                   hover:bg-emerald-50
+                   focus-visible:outline-2
+                   focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            เกี่ยวกับเรา
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Travel Image -->
+      <div class="w-full min-w-0 md:w-1/2">
+        <div class="overflow-hidden rounded-2xl shadow-lg"
+          data-aos="fade-up">
+        <img
+        src="https://www.drivehub.com/blog/wp-content/uploads/2023/07/Blog-25_rainy_attractions.jpg"
+        alt="สถานที่ท่องเที่ยวท่ามกลางภูเขาและนาขั้นบันได"
+        class="h-auto w-full object-cover"
+/>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Featured Products / Recommended Places -->
+<section
+  id="featured-places"
+  class="bg-[#FFFDF5] py-12 sm:py-16 lg:py-20"
+  aria-labelledby="featured-places-heading"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Heading -->
+    <div 
+      data-aos="fade-up"
+      class="mb-8 sm:mb-10">
+      <p class="mb-2 text-sm font-semibold tracking-wide text-emerald-600">
+        หนวดหมู่
+      </p>
+
+      <h2
+        id="featured-places-heading"
+        class="text-2xl font-bold tracking-tight text-emerald-950 sm:text-3xl"
+      >
+        จุดหมายปลายทางยอดนิยม
+      </h2>
+
+      <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
+        รวมสถานที่ท่องเที่ยวที่น่าสนใจ
+        สำหรับคนที่อยากออกไปพบกับประสบการณ์ใหม่ ๆ
+      </p>
+    </div>
+
+    <!-- Places Grid -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Place 1 -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white transition-all duration-300
+               hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg"
+      >
+        <div class="relative overflow-hidden"div data-aos="fade-right">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+            alt="ชายหาดและทะเลสีฟ้าใส"
+            class="aspect-square w-full object-cover transition-transform
+                   duration-300 group-hover:scale-105"
+          >
+          <span
+            class="absolute left-3 top-3 rounded-full bg-emerald-700
+                   px-3 py-1 text-xs font-semibold text-white"
+          >
+            ยอดนิยม
+          </span>
+        </div>
+
+        <div class="p-5"div data-aos="fade-right"div data-aos="fade-right">
+          <h3 class="text-lg font-bold text-emerald-950">
+            เกาะทะเลสวย
+          </h3>
+
+          <div class="mt-5 flex flex-col gap-2">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg
+                     border border-emerald-700 px-4 py-2.5 text-sm
+                     font-semibold text-emerald-700 transition-colors
+                     hover:bg-emerald-50
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ดูรายละเอียด
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-lg
+                     bg-emerald-700 px-4 py-2.5 text-sm font-semibold
+                     text-white transition-colors hover:bg-emerald-800
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ติดต่อ
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place 2 -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white transition-all duration-300
+               hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg"
+      >
+        <div class="relative overflow-hidden"div data-aos="fade-right">
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+            alt="ภูเขาสูงและธรรมชาติ"
+            class="aspect-square w-full object-cover transition-transform
+                   duration-300 group-hover:scale-105"
+          >
+
+          <span
+            class="absolute left-3 top-3 rounded-full bg-emerald-700
+                   px-3 py-1 text-xs font-semibold text-white"
+          >
+            ยอดนิยม
+          </span>
+        </div>
+
+        <div class="p-5"div data-aos="fade-right">
+          <h3 class="text-lg font-bold text-emerald-950">
+            ภูเขาและสายหมอก
+          </h3>
+
+          <div class="mt-5 flex flex-col gap-2">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg
+                     border border-emerald-700 px-4 py-2.5 text-sm
+                     font-semibold text-emerald-700 transition-colors
+                     hover:bg-emerald-50
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ดูรายละเอียด
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-lg
+                     bg-emerald-700 px-4 py-2.5 text-sm font-semibold
+                     text-white transition-colors hover:bg-emerald-800
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ติดต่อ
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place 3 -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white transition-all duration-300
+               hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg"
+      >
+        <div class="relative overflow-hidden"div data-aos="fade-right">
+          <img
+            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+            alt="วัดและสถาปัตยกรรมท่ามกลางธรรมชาติ"
+            class="aspect-square w-full object-cover transition-transform
+                   duration-300 group-hover:scale-105"
+          >
+
+          <span
+            class="absolute left-3 top-3 rounded-full bg-emerald-700
+                   px-3 py-1 text-xs font-semibold text-white"
+          >
+            ยอดนิยม
+          </span>
+        </div>
+
+        <div class="p-5"div data-aos="fade-right">
+          <h3 class="text-lg font-bold text-emerald-950">
+            เมืองเก่าและวัฒนธรรม
+          </h3>
+
+          <div class="mt-5 flex flex-col gap-2">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg
+                     border border-emerald-700 px-4 py-2.5 text-sm
+                     font-semibold text-emerald-700 transition-colors
+                     hover:bg-emerald-50
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ดูรายละเอียด
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-lg
+                     bg-emerald-700 px-4 py-2.5 text-sm font-semibold
+                     text-white transition-colors hover:bg-emerald-800
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ติดต่อ
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place 4 -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white transition-all duration-300
+               hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg"
+      >
+        <div class="relative overflow-hidden"div data-aos="fade-right">
+          <img
+            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
+            alt="หมู่บ้านและภูเขาท่ามกลางธรรมชาติ"
+            class="aspect-square w-full object-cover transition-transform
+                   duration-300 group-hover:scale-105"
+          >
+
+          <span
+            class="absolute left-3 top-3 rounded-full bg-emerald-700
+                   px-3 py-1 text-xs font-semibold text-white"
+          >
+            ยอดนิยม
+          </span>
+        </div>
+
+        <div class="p-5"div data-aos="fade-right">
+          <h3 class="text-lg font-bold text-emerald-950">
+            หมู่บ้านกลางหุบเขา
+          </h3>
+
+          <div class="mt-5 flex flex-col gap-2">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg
+                     border border-emerald-700 px-4 py-2.5 text-sm
+                     font-semibold text-emerald-700 transition-colors
+                     hover:bg-emerald-50
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ดูรายละเอียด
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-lg
+                     bg-emerald-700 px-4 py-2.5 text-sm font-semibold
+                     text-white transition-colors hover:bg-emerald-800
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-700"
+            >
+              ติดต่อ
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- Product Categories -->
+<section class="bg-[#FFFDF5] py-16" aria-labelledby="categories-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Heading -->
+    <div
+      data-aos="fade-up" 
+      class="mb-10">
+      <p class="text-emerald-700 font-semibold text-sm sm:text-base mb-2">
+        หมวดหมู่สถานที่
+      </p>
+
+      <h2
+        id="categories-heading"
+        class="text-3xl sm:text-4xl font-bold text-emerald-950"
+      >
+        เที่ยวทั่วไทย
+      </h2>
+
+      <p class="mt-3 text-gray-600">
+        เลือกภูมิภาคที่ต้องการ แล้วออกไปค้นพบสถานที่ท่องเที่ยวที่น่าสนใจ
+      </p>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+    data-aos="fade-up">
+
+      <!-- ภาคเหนือ -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white shadow-sm transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200"
+      >
+        <div class="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80"
+            alt="ภูเขาและธรรมชาติในภาคเหนือ"
+            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          >
+        </div>
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-emerald-950">
+            ภาคเหนือ
+          </h3>
+
+          <a
+            href="#"
+            class="mt-4 inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2.5 text-sm font-semibold
+                   text-emerald-700 transition-colors
+                   hover:bg-emerald-50
+                   focus-visible:outline-2 focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            ดูสถานที่
+          </a>
+        </div>
+      </article>
+
+      <!-- ภาคอีสาน -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white shadow-sm transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200"
+      >
+        <div class="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80"
+            alt="สถานที่ท่องเที่ยวและธรรมชาติในภาคอีสาน"
+            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          >
+        </div>
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-emerald-950">
+            ภาคอีสาน
+          </h3>
+
+          <a
+            href="#"
+            class="mt-4 inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2.5 text-sm font-semibold
+                   text-emerald-700 transition-colors
+                   hover:bg-emerald-50
+                   focus-visible:outline-2 focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            ดูสถานที่
+          </a>
+        </div>
+      </article>
+
+      <!-- ภาคใต้ -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white shadow-sm transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200"
+      >
+        <div class="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+            alt="ทะเลและชายหาดในภาคใต้"
+            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          >
+        </div>
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-emerald-950">
+            ภาคใต้
+          </h3>
+
+          <a
+            href="#"
+            class="mt-4 inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2.5 text-sm font-semibold
+                   text-emerald-700 transition-colors
+                   hover:bg-emerald-50
+                   focus-visible:outline-2 focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            ดูสถานที่
+          </a>
+        </div>
+      </article>
+
+      <!-- ภาคกลาง -->
+      <article
+        class="group overflow-hidden rounded-2xl border border-emerald-100
+               bg-white shadow-sm transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200"
+      >
+        <div class="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=800&q=80"
+            alt="สถานที่ท่องเที่ยวและวัฒนธรรมในภาคกลาง"
+            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          >
+        </div>
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-emerald-950">
+            ภาคกลาง
+          </h3>
+
+          <a
+            href="#"
+            class="mt-4 inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2.5 text-sm font-semibold
+                   text-emerald-700 transition-colors
+                   hover:bg-emerald-50
+                   focus-visible:outline-2 focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-700"
+          >
+            ดูสถานที่
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+  </div>
+</section>
+</main>
+</body>
+</html>
+<!-- Why Choose Us -->
+<section
+  class="bg-[#FFFDF5] py-16"
+  aria-labelledby="why-rungear-heading"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div 
+      data-aos="fade-up"
+      class="max-w-2xl mb-10">
+      <p class="text-emerald-700 font-semibold text-sm sm:text-base mb-2">
+        ทำไมต้องเลือกเรา
+      </p>
+
+      <h2
+        id="why-rungear-heading"
+        class="text-3xl sm:text-4xl font-bold text-emerald-950"
+      >
+        ทำไมต้องเลือก แบกเป้เที่ยว
+      </h2>
+
+      <p class="mt-3 text-gray-600">
+        ตัวช่วยวางแผนการเดินทาง ให้ทุกทริปง่ายและน่าประทับใจ
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+    data-aos="fade-up">
+
+      <!-- Feature 1 -->
+      <article
+        class="rounded-2xl border border-emerald-100 bg-white p-6
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200
+               focus-within:ring-2 focus-within:ring-emerald-700"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-xl
+                 bg-emerald-50 text-emerald-700 mb-5"
+          aria-hidden="true"
+        >
+          <!-- Clock Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 7v5l3 2"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-lg font-bold text-emerald-950">
+          สำหรับคนที่เวลาเที่ยวน้อย
+        </h3>
+
+        <p class="mt-2 text-sm leading-6 text-gray-600">
+          ช่วยค้นหาสถานที่และวางแผนทริปให้เหมาะกับเวลาที่มี
+        </p>
+      </article>
+
+      <!-- Feature 2 -->
+      <article
+        class="rounded-2xl border border-emerald-100 bg-white p-6
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200
+               focus-within:ring-2 focus-within:ring-emerald-700"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-xl
+                 bg-emerald-50 text-emerald-700 mb-5"
+          aria-hidden="true"
+        >
+          <!-- Check Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M5 12l4 4L19 6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+
+        <h3 class="text-lg font-bold text-emerald-950">
+          ครบจบที่เว็บไซต์เดียว
+        </h3>
+
+        <p class="mt-2 text-sm leading-6 text-gray-600">
+          รวมข้อมูลสำคัญสำหรับการเดินทางไว้ให้ค้นหาได้ง่ายในที่เดียว
+        </p>
+      </article>
+
+      <!-- Feature 3 -->
+      <article
+        class="rounded-2xl border border-emerald-100 bg-white p-6
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200
+               focus-within:ring-2 focus-within:ring-emerald-700"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-xl
+                 bg-emerald-50 text-emerald-700 mb-5"
+          aria-hidden="true"
+        >
+          <!-- Map Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path d="M9 3v15M15 6v15"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-lg font-bold text-emerald-950">
+          วางแผนเที่ยวได้ง่ายและรวดเร็ว
+        </h3>
+
+        <p class="mt-2 text-sm leading-6 text-gray-600">
+          เลือกจุดหมายและจัดทริปได้อย่างสะดวก ไม่เสียเวลาค้นหานาน
+        </p>
+      </article>
+
+      <!-- Feature 4 -->
+      <article
+        class="rounded-2xl border border-emerald-100 bg-white p-6
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg hover:border-emerald-200
+               focus-within:ring-2 focus-within:ring-emerald-700"
+      >
+        <div
+          class="flex h-12 w-12 items-center justify-center rounded-xl
+                 bg-emerald-50 text-emerald-700 mb-5"
+          aria-hidden="true"
+        >
+          <!-- User Expert Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="8" r="3"></circle>
+            <path
+              d="M5 21a7 7 0 0114 0"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M19 8l1 2 2 .3-1.5 1.5.4 2.2-1.9-1-1.9 1 .4-2.2L17 10.3l2-.3z"
+            ></path>
+          </svg>
+        </div>
+
+        <h3 class="text-lg font-bold text-emerald-950">
+          ให้คำแนะนำโดยผู้เชี่ยวชาญ
+        </h3>
+
+        <p class="mt-2 text-sm leading-6 text-gray-600">
+          แนะนำข้อมูลการท่องเที่ยวเพื่อช่วยให้คุณตัดสินใจได้มั่นใจขึ้น
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- Testimonials -->
+<section
+  class="bg-[#FFFDF5] py-16 overflow-hidden"
+  aria-labelledby="testimonials-heading"
+  data-aos="fade-up"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="max-w-2xl mb-10">
+      <p class="text-emerald-700 font-semibold text-sm sm:text-base mb-2">
+        เสียงจากผู้ใช้
+      </p>
+
+      <h2
+        id="testimonials-heading"
+        class="text-3xl sm:text-4xl font-bold text-emerald-950"
+      >
+        รีวิวจากผู้ใช้
+      </h2>
+
+      <p class="mt-3 text-gray-600">
+        ประสบการณ์จริงจากคนที่เลือก แบกเป้เที่ยว เป็นเพื่อนในการเดินทาง
+      </p>
+    </div>
+
+    <!-- Review Slider -->
+    <div
+      class="flex gap-6 overflow-x-auto snap-x snap-mandatory
+             pb-6 scrollbar-thin
+             scrollbar-thumb-emerald-700
+             scrollbar-track-emerald-50
+             scrollbar-gutter-stable
+             focus-visible:outline-2
+             focus-visible:outline-emerald-700"
+      tabindex="0"
+      aria-label="รีวิวจากนักวิ่ง เลื่อนเพื่อดูรีวิวเพิ่มเติม"
+      data-aos="fade-up"
+    >
+
+      <!-- Card 1 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=12"
+            alt="รูปโปรไฟล์ของกิตติ"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              กิตติ
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              kitti@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “ช่วยให้ผมวางแผนเที่ยวได้ง่ายขึ้นมาก ข้อมูลครบและใช้งานสะดวก”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 2 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=32"
+            alt="รูปโปรไฟล์ของมินตรา"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              มินตรา
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              mintra@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “ชอบมาก เพราะมีสถานที่ให้เลือกหลายแบบ ทำให้หาไอเดียเที่ยวได้เร็ว”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 3 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=11"
+            alt="รูปโปรไฟล์ของนนท์"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              นนท์
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              non@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “เหมาะกับคนที่มีเวลาน้อย ช่วยเลือกจุดหมายได้ตรงกับเวลาที่มี”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 4 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=47"
+            alt="รูปโปรไฟล์ของแพรว"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              แพรว
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              praew@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “เว็บใช้งานง่าย ข้อมูลแต่ละสถานที่อ่านแล้วเข้าใจทันที”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 5 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=68"
+            alt="รูปโปรไฟล์ของบอส"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              บอส
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              boss@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “ค้นหาสถานที่ใหม่ ๆ ได้จากที่เดียว สะดวกมาก”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 6 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=44"
+            alt="รูปโปรไฟล์ของฟ้า"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              ฟ้า
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              fah@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “ช่วยให้ตัดสินใจเลือกสถานที่ได้ง่าย เหมาะกับทริปสั้น ๆ”
+        </blockquote>
+      </article>
+
+
+      <!-- Card 7 -->
+      <article
+        class="shrink-0 snap-start
+               w-[85%] sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               rounded-2xl border border-emerald-100
+               bg-white p-6 shadow-sm
+               transition-all duration-300
+               hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="https://i.pravatar.cc/150?img=49"
+            alt="รูปโปรไฟล์ของเจ"
+            class="h-12 w-12 rounded-full object-cover"
+          >
+
+          <div>
+            <h3 class="font-bold text-emerald-950">
+              เจ
+            </h3>
+
+            <p class="text-sm text-gray-500">
+              jay@example.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 text-lg tracking-wide"
+          aria-hidden="true"
+        >
+          ★★★★★
+        </div>
+
+        <span class="sr-only">
+          คะแนน 5 จาก 5
+        </span>
+
+        <blockquote class="mt-3 text-sm leading-6 text-gray-600">
+          “เป็นเว็บไซต์ที่ช่วยประหยัดเวลาในการเตรียมทริปได้ดีมาก”
+        </blockquote>
+      </article>
+
+    </div>
+  </div>
+  <!-- Footer -->
+<footer class="bg-emerald-950 text-white">
+  <div class="mx-auto max-w-7xl px-6 py-12 sm:px-8 sm:py-14 lg:px-12"
+  data-aos="fade-up">
+
+    <!-- Footer Grid -->
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Website Info -->
+      <div >
+        <a
+          href="#"
+          class="inline-block text-2xl font-bold text-white
+                 transition-colors hover:text-emerald-300
+                 focus-visible:outline-2
+                 focus-visible:outline-offset-4
+                 focus-visible:outline-emerald-300"
+        >
+          แบกเป้เที่ยว
+        </a>
+
+        <p class="mt-4 max-w-xs text-sm leading-6 text-emerald-100">
+          เว็บไซต์แนะนำสถานที่ท่องเที่ยว
+          ที่ช่วยให้คุณค้นพบสถานที่น่าสนใจ
+          และวางแผนการเดินทางได้ง่ายขึ้น
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <nav aria-label="เมนูลิงก์ด่วน">
+        <h2 class="text-base font-bold text-white">
+          ลิงก์ด่วน
+        </h2>
+
+        <ul class="mt-4 space-y-3">
+          <li>
+            <a
+              href="#"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              หน้าแรก
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#featured-places"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              สถานที่แนะนำ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#categories"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              หมวดหมู่
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#about"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              เกี่ยวกับเรา
+            </a>
+          </li>
+        </ul>
+        
+      </nav>
+
+
+
+
+      <nav aria-label="เมนูลิงก์ด่วน">
+        <h2 class="text-base font-bold text-white">
+          ลิงก์ด่วน
+        </h2>
+
+        <ul class="mt-4 space-y-3">
+          <li>
+            <a
+              href="#"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              หน้าแรก
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#featured-places"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              สถานที่แนะนำ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#categories"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              หมวดหมู่
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#about"
+              class="text-sm text-emerald-100 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              เกี่ยวกับเรา
+            </a>
+          </li>
+        </ul>
+        
+      </nav>
+      <!-- Contact -->
+      <div>
+        <h2 class="text-base font-bold text-white">
+          ติดต่อเรา
+        </h2>
+
+        <address class="mt-4 space-y-3 not-italic text-sm text-emerald-100">
+          <p>
+            กรุงเทพฯ ประเทศไทย
+          </p>
+
+          <p>
+            <a
+              href="tel:+66123456789"
+              class="transition-colors hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              โทร: 012-345-6789
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="mailto:contact@baakpaotiew.com"
+              class="transition-colors hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              contact@baakpaotiew.com
+            </a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h2 class="text-base font-bold text-white">
+          Social Media
+        </h2>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2 text-sm
+                   font-medium text-emerald-100 transition-colors
+                   hover:border-emerald-400 hover:bg-emerald-800
+                   hover:text-white
+                   focus-visible:outline-2
+                   focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-300"
+          >
+            Facebook
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2 text-sm
+                   font-medium text-emerald-100 transition-colors
+                   hover:border-emerald-400 hover:bg-emerald-800
+                   hover:text-white
+                   focus-visible:outline-2
+                   focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-300"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            class="inline-flex items-center justify-center rounded-lg
+                   border border-emerald-700 px-4 py-2 text-sm
+                   font-medium text-emerald-100 transition-colors
+                   hover:border-emerald-400 hover:bg-emerald-800
+                   hover:text-white
+                   focus-visible:outline-2
+                   focus-visible:outline-offset-2
+                   focus-visible:outline-emerald-300"
+          >
+            YouTube
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div
+      class="mt-10 border-t border-emerald-800 pt-6
+             sm:mt-12 sm:flex sm:items-center sm:justify-between"
+    >
+      <p class="text-sm text-emerald-200">
+        © 2026 แบกเป้เที่ยว. สงวนลิขสิทธิ์
+      </p>
+
+      <nav
+        aria-label="นโยบายและเงื่อนไข"
+        class="mt-4 sm:mt-0"
+      >
+        <ul class="flex flex-wrap gap-x-5 gap-y-2">
+          <li>
+            <a
+              href="#privacy"
+              class="text-sm text-emerald-200 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              นโยบายความเป็นส่วนตัว
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#terms"
+              class="text-sm text-emerald-200 transition-colors
+                     hover:text-white hover:underline
+                     focus-visible:outline-2
+                     focus-visible:outline-offset-2
+                     focus-visible:outline-emerald-300"
+            >
+              เงื่อนไขการใช้งาน
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
